@@ -6,13 +6,20 @@ class Square extends React.Component{
         this.state = {
             backgroundColor: "gray",
             enabled: true,
-            }
+            };
+    }
+
+    clickHandler = () => {
+        this.setState({
+            backgroundColor: "white",
+            enabled: false,
+        });
     }
 
     render(){
         return (
-            <div className={"square " + this.props.className + " " + this.state.backgroundColor} data-index={this.props.dataIndex}>
-                {this.props.textContent}{this.props.dataIndex}
+            <div onClick={this.clickHandler} className={"square " + this.props.className + " " + this.state.backgroundColor} data-index={this.props.dataIndex}>
+                {this.props.textContent}{this.props.dataIndex}{this.state.enabled ? 1 : 0}
             </div>
         );
     }

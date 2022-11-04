@@ -44,6 +44,7 @@
   text-align: center;
   display: inline-block;
   margin: 5px;
+  font-size: 32px;
 }
 
 .gray{
@@ -65,4 +66,9 @@
 .error_message {
   color: red;
   font-size: 9px;
+}
+
+.hasMove{
+  background-color: #282c34;
+  color: #ccc;
 }

@@ -7,10 +7,14 @@ import Board from './Board';
 import SampleForm from './SampleForm';
 import TicTacToe from './TicTacToe';
 import DynamicForm from './DynamicForm';
+import EmployeeList from './EmployeeList';
 
 function App() {
   return (
     <div className="">
+
+      <EmployeeList/>
+
 
       <DynamicForm/>
       
